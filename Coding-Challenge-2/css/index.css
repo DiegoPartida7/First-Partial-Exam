@@ -2,3 +2,93 @@ div{
   border: 1px solid black;
   padding: 5px;
 }
+
+
+@media only screen and (max-width: 599px){
+  .container > .heading{
+    display: none;
+  }
+  .content{
+    display: none;
+  }
+  .container > .navigation{
+    text-align: center;
+  }
+  .container > .navigation > .nav-box{
+    margin: 30px 10px;
+  }
+
+}
+@media only screen and (min-width: 600px) and (max-width: 991px){
+  .container > .heading{
+    display: none;
+  }
+  .container > .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container > .navigation > .nav-box{
+    margin: 10px 10px;
+    width: 33%;
+  }
+  .content{
+    display: flex;
+
+  }
+
+  .content > .side{
+    display: flex;
+    flex-direction: column;
+    width: 500%;
+  }
+
+  .content > .side > .side-box{
+    height: 50%;
+  }
+
+  .content > .main{
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 992px){
+  .container > .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .container > .heading > .heading-box{
+    margin: 10px 10px;
+    width: 33%;
+  }
+  .container > .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container > .navigation > .nav-box{
+    margin: 10px 10px;
+    width: 33%;
+  }
+  .content{
+    display: flex;
+
+  }
+
+  .content > .side{
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+  }
+
+  .content > .side > .side-box{
+    height: 50%;
+  }
+
+  .content > .main{
+    display: flex;
+    flex-direction: row;
+  }
+}
